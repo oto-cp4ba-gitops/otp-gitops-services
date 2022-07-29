@@ -1,0 +1,8 @@
+apiVersion: operators.coreos.com/v1
+kind: OperatorGroup
+metadata:
+  name: cp4ba-operator-group
+  namespace: filenet-cp4ba
+spec:
+  targetNamespaces:
+    - filenet-cp4ba
