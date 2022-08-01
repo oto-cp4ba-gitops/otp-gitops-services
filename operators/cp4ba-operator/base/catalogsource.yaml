@@ -18,7 +18,7 @@ spec:
   displayName: ibm-cp4a-operator
   publisher: IBM
   sourceType: grpc
-  image: icr.io/cpopen/ibm-cp-automation-catalog@sha256:f0b137d20ed52cc5bec8dd7ca03fe57e824cf30418803d421c6b50f4d7f5297e
+  image: changeme_image_and_hash
   updateStrategy:
     registryPoll:
       interval: 45m
@@ -33,7 +33,7 @@ spec:
   displayName: IBM Automation Foundation Operators
   publisher: IBM
   sourceType: grpc
-  image: icr.io/cpopen/ibm-cp-automation-foundation-catalog@sha256:267bbc17bad1966be259bb9a6951c520c6fb824bfa42bbec22570ba49883d4ae
+  image: changeme_image_and_hash
   updateStrategy:
     registryPoll:
       interval: 45m
@@ -48,7 +48,7 @@ spec:
   displayName: IBM Automation Foundation Core Operators
   publisher: IBM
   sourceType: grpc
-  image: icr.io/cpopen/ibm-automation-foundation-core-catalog@sha256:5502c003afe7a0590ce123c3bbbd76e46374af641b3a210e3c25cfe2381e4647
+  image: changeme_image_and_hash
   updateStrategy:
     registryPoll:
       interval: 45m
@@ -65,7 +65,7 @@ spec:
   displayName: IBMCS Operators
   publisher: IBM
   sourceType: grpc
-  image: icr.io/cpopen/ibm-common-service-catalog@sha256:87904dee339ee4bbcbdc07949abc8df82bf6d85706f90795e6dae5e45f876b19
+  image: changeme_image_and_hash
   updateStrategy:
     registryPoll:
       interval: 45m
@@ -83,7 +83,7 @@ spec:
   displayName: BTS Operator
   publisher: IBM
   sourceType: grpc
-  image: icr.io/cpopen/ibm-bts-operator-catalog@sha256:68596113ad291b36b78d53207f73b53691f9f0154a21f38c717c08a0100deb9f
+  image: changeme_image_and_hash
   updateStrategy:
     registryPoll:
       interval: 45m
@@ -100,7 +100,7 @@ spec:
   displayName: Cloud Native Postgresql Catalog
   publisher: IBM
   sourceType: grpc
-  image: icr.io/cpopen/ibm-cpd-cloud-native-postgresql-operator-catalog@sha256:f3feb39b0dfb444a46d99a9cd160c616f8548d84d452cbc89e4985f0a2574486
+  image: changeme_image_and_hash
   updateStrategy:
     registryPoll:
       interval: 45m
