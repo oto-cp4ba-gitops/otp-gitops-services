@@ -13,7 +13,7 @@ LDAP_CONFIG_PASSWORD=${LDAP_CONFIG_PASSWORD}
 SEALED_SECRET_NAMESPACE=${SEALED_SECRET_NAMESPACE:-sealed-secrets}
 SEALED_SECRET_CONTOLLER_NAME=${SEALED_SECRET_CONTOLLER_NAME:-sealed-secrets}
 
-# Create Kubernetes Secret yaml
+# Create Kubernetes Secret yaml in namespace "openldap"
 oc create secret generic openldap -n openldap \
    --from-literal LDAP_ADMIN_PASSWORD=${LDAP_ADMIN_PASSWORD} \
    --from-literal LDAP_CONFIG_PASSWORD=${LDAP_CONFIG_PASSWORD} \
@@ -22,5 +22,5 @@ oc create secret generic openldap -n openldap \
 # Encrypt the secret using kubeseal and private key from the cluster
 kubeseal -n openldap --controller-name=${SEALED_SECRET_CONTOLLER_NAME} --controller-namespace=${SEALED_SECRET_NAMESPACE} -o yaml < delete-ldap-secret.yaml > ldap-secret.yaml
 
-# NOTE, do not check delete-ibm-entitled-key-secret.yaml into git!
+# NOTE, do not push delete-ldap-secret.yaml into git!
 rm delete-ldap-secret.yaml
